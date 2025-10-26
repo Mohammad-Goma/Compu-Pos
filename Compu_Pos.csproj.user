@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>E:\New folder\Compu_Pos\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Reports\RPT_Views\frm_rpt_Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Reports\RPT_Views\frm_rpt_Profits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Reports\RPT_Views\frm_rpt_purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frm_Branch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frm_Cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frm_Company.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frm_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frm_Delevery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frm_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frm_Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frm_Invoice_Return.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frm_Logo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frm_price_Checker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frm_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frm_Purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frm_Purchase_Return.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frm_RevenueService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frm_SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frm_Store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frm_Unit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
