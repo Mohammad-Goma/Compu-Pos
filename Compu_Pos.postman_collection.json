@@ -34,7 +34,7 @@
 	"variable": [
 		{
 			"key": "db_server",
-			"value": "DESKTOP-42E526E\\MSSQLSERVER_2016",
+			"value": "YOUR_SERVER_NAME\\INSTANCE_NAME",
 			"type": "string"
 		},
 		{
@@ -44,12 +44,12 @@
 		},
 		{
 			"key": "db_user",
-			"value": "sa",
+			"value": "YOUR_USERNAME",
 			"type": "string"
 		},
 		{
 			"key": "db_password",
-			"value": "6321",
+			"value": "YOUR_PASSWORD",
 			"type": "string"
 		}
 	]

@@ -36,10 +36,8 @@ artifacts/
 # Consider using appsettings.Development.json for local overrides
 *.local.json
 
-# Postman sensitive files (if you want to keep them local)
-# Uncomment these if you don't want to share credentials:
-# *.postman_environment.json
-# *.postman_collection.json
+# Postman local files with real credentials
+*.postman_environment.local.json
 
 # Rider
 .idea/

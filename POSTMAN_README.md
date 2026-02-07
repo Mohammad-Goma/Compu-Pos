@@ -18,13 +18,27 @@
 
 #### معلومات الاتصال:
 
-المجموعة تحتوي على المتغيرات التالية:
+المجموعة تحتوي على المتغيرات التالية (يجب تحديثها بمعلوماتك):
 
-- **db_server**: `DESKTOP-42E526E\MSSQLSERVER_2016`
+- **db_server**: اسم السيرفر الخاص بك (مثال: `DESKTOP-42E526E\MSSQLSERVER_2016`)
 - **db_name**: `Compu_Pos`
-- **db_user**: `sa`
-- **db_password**: `6321`
+- **db_user**: اسم المستخدم الخاص بك
+- **db_password**: كلمة المرور الخاصة بك
 - **connection_string**: السلسلة الكاملة للاتصال بقاعدة البيانات
+
+#### تكوين بيانات الاعتماد الخاصة بك:
+
+بعد استيراد الملفات إلى Postman:
+
+1. افتح "Environments" من الشريط الجانبي الأيسر
+2. اختر "Compu-Pos Database Environment"
+3. قم بتحديث القيم التالية بمعلومات قاعدة البيانات الخاصة بك:
+   - `db_server`: استبدل `YOUR_SERVER_NAME\INSTANCE_NAME` باسم السيرفر الخاص بك
+   - `db_user`: استبدل `YOUR_USERNAME` باسم المستخدم الخاص بك
+   - `db_password`: استبدل `YOUR_PASSWORD` بكلمة المرور الخاصة بك
+4. احفظ التغييرات
+
+**ملاحظة**: يمكنك نسخ معلومات الاتصال من ملف `appsettings.json` في المشروع.
 
 #### الاستخدام:
 
@@ -55,13 +69,27 @@ This collection contains connection information for the Compu-Pos database.
 
 #### Connection Information:
 
-The collection contains the following variables:
+The collection contains the following variables (you need to update them with your information):
 
-- **db_server**: `DESKTOP-42E526E\MSSQLSERVER_2016`
+- **db_server**: Your server name (example: `DESKTOP-42E526E\MSSQLSERVER_2016`)
 - **db_name**: `Compu_Pos`
-- **db_user**: `sa`
-- **db_password**: `6321`
+- **db_user**: Your username
+- **db_password**: Your password
 - **connection_string**: Complete database connection string
+
+#### Configure Your Credentials:
+
+After importing the files to Postman:
+
+1. Open "Environments" from the left sidebar
+2. Select "Compu-Pos Database Environment"
+3. Update the following values with your database information:
+   - `db_server`: Replace `YOUR_SERVER_NAME\INSTANCE_NAME` with your server name
+   - `db_user`: Replace `YOUR_USERNAME` with your username
+   - `db_password`: Replace `YOUR_PASSWORD` with your password
+4. Save the changes
+
+**Note**: You can copy the connection information from the `appsettings.json` file in the project.
 
 #### Usage:
 
@@ -83,6 +111,21 @@ You can use these variables in your API requests by:
 
 ⚠️ **تحذير أمني / Security Warning**: 
 
-**العربية**: هذه الملفات تحتوي على بيانات اعتماد حساسة (اسم المستخدم وكلمة المرور). يجب عدم مشاركتها في مستودعات عامة أو إرسالها لأشخاص غير موثوقين.
+**العربية**: 
+- الملفات المُضمّنة في المشروع تحتوي على قيم نموذجية (placeholders) فقط
+- يجب عليك تحديث بيانات الاعتماد (اسم المستخدم وكلمة المرور) في Postman بعد الاستيراد
+- **لا تشارك** ملفات Postman التي تحتوي على بيانات الاعتماد الحقيقية
+- **لا تقم برفع** ملفات تحتوي على كلمات مرور حقيقية إلى GitHub أو أي مستودع عام
 
-**English**: These files contain sensitive credentials (username and password). Do not share them in public repositories or send them to untrusted parties.
+**English**: 
+- The files included in the project contain placeholder values only
+- You must update the credentials (username and password) in Postman after importing
+- **Do not share** Postman files that contain real credentials
+- **Do not upload** files containing real passwords to GitHub or any public repository
+
+### للمطورين / For Developers:
+
+If you want to create a local copy with your actual credentials:
+1. Copy `Compu_Pos.postman_environment.json` to `Compu_Pos.postman_environment.local.json`
+2. Update the local file with your real credentials
+3. The `.local.json` files are ignored by git and won't be committed
