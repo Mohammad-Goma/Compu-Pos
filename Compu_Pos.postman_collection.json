@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "compu-pos-db-connection",
+		"name": "Compu-Pos Database Connection",
+		"description": "مجموعة Postman لبيانات الاتصال بقاعدة بيانات Compu-Pos\n\nPostman collection for Compu-Pos database connection credentials",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Database Connection Info",
+			"item": [
+				{
+					"name": "SQL Server Connection Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{db_server}}/{{db_name}}",
+							"host": [
+								"{{db_server}}"
+							],
+							"path": [
+								"{{db_name}}"
+							]
+						},
+						"description": "معلومات الاتصال بقاعدة بيانات SQL Server\n\nSQL Server Connection Details:\n- Server: {{db_server}}\n- Database: {{db_name}}\n- User ID: {{db_user}}\n- Password: {{db_password}}\n\nConnection String:\n```\nData Source={{db_server}};Initial Catalog={{db_name}};User ID={{db_user}};Password={{db_password}};TrustServerCertificate=True;MultipleActiveResultSets=True;\n```"
+					},
+					"response": []
+				}
+			],
+			"description": "معلومات الاتصال بقاعدة البيانات من ملف appsettings.json"
+		}
+	],
+	"variable": [
+		{
+			"key": "db_server",
+			"value": "DESKTOP-42E526E\\MSSQLSERVER_2016",
+			"type": "string"
+		},
+		{
+			"key": "db_name",
+			"value": "Compu_Pos",
+			"type": "string"
+		},
+		{
+			"key": "db_user",
+			"value": "sa",
+			"type": "string"
+		},
+		{
+			"key": "db_password",
+			"value": "6321",
+			"type": "string"
+		}
+	]
+}
